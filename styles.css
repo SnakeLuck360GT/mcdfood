@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+#result {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#result .copy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#result .copy-button:hover {
+  background-color: #0056b3;
+}
+
+#result .copy-button:focus {
+  outline: none;
+}
+
+#result .copy-button:active {
+  background-color: #004080;
+}
+
+button {
+  padding: 20px;
+  font-size: 24px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #004080;
+}
+
+/* Optional: Add some margin between the button and the result */
+button + #result {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens (e.g., mobile devices) */
+  #result {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
